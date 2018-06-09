@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="dd"></p>
+	<p id="ss"></p>
+<script type="text/javascript">
+	var emptyobj={};
+	var person={firstnm:"MAnu"};
+	var message={
+		val:28,
+		showmsg:function(val){
+			return this.val;
+		}
+	};
+
+	document.getElementById('dd').innerHTML=message.showmsg();
+	var person={
+		firstnm:"manu",
+		lastnm:"chadda",
+		age:15,
+		getfullname:function(){
+			return this.firstnm+" "+this.lastnm;
+		}
+
+	};
+document.getElementById('ss').innerHTML=person.getfullname();
+</script>
+</body>
+</html>

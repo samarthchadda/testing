@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<input id="myinput" value="orange" type="text">
+<button onclick="myfunction()">Check Fruit</button>
+<p id="demo"></p>
+<script>
+	function myfunction(){
+		var text;
+		var fruit=document.getElementById("myinput").value;
+		switch(fruit)
+		{
+			case "banana":
+			text="banana is good";
+			break;
+			case "orange":
+			text="I am not fan of orange";
+			break;
+			default:
+			text="I have never heard of that fruit";
+
+		}
+		document.getElementById('demo').innerHTML=text;
+		
+	}
+</script>
+
+</body>
+</html>

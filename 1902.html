@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<p id="demo"></p>
+<script type="text/javascript">
+  var text;
+  switch(new Date().getDay())
+  {
+    case 4:
+    case 5:
+      text="soon it is a weekend";
+    break;
+    case 0:
+    case 6:
+    text  ="It is a weekend";
+    break;
+    default:
+    text="looking forward to the weekend";
+
+  }
+  document.getElementById('demo').innerHTML=text;
+</script>
+</body>
+</html>

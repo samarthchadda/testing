@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+	<h1>Javascript Arrays</h1>
+	<h1>appending new element without push method</h1>
+	<p id="demo"></p>
+	<button onclick="myfunc()">Click Me</button>
+	<script type="text/javascript">
+		var fruits=["apple","orange","mango","banana"];
+		document.getElementById('demo').innerHTML=fruits;
+		function myfunc()
+		{
+			fruits[fruits.length]="lemon";
+			document.getElementById('demo').innerHTML=fruits;
+		}
+	</script>
+
+</body>
+</html>

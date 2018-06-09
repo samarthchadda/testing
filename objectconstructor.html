@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var person= new obj();
+	//attach properties and methods to person object
+	person.firstnm="manu";
+	person["lastnm"]="chadda";
+	person.age=19;
+	person.getfullname=function(){
+		return this.firstnm+" "+this.lastnm;
+
+	};
+	//access properties and methods
+	person.firstnm;        //manu
+	person.lastnm;         //chadda
+	person.getfullname();  // manu chadda
+
+</script>
+</body>
+</html>

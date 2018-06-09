@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+
+<h1>Javascript functions</h1>
+<h4 id="demo"></h4>
+<script type="text/javascript">
+	function myfunc(p1,p2)
+	{
+		return p1*p2;
+
+	}
+	document.getElementById('demo').innerHTML=myfunc(5,2);
+
+</script>
+
+
+<p id="dd"></p>
+<script>
+	document.getElementById('dd').innerHTML="temperature is "+tocelcius(77)+" celcius";
+	function tocelcius(fahrenheit){
+		return (5/9)*(fahrenheit-32);
+
+
+	}
+</script>
+</body>
+</html>
